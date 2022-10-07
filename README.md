@@ -1,5 +1,5 @@
 # qPND
- Hybrid Algorithm for detecting prime numbers.
+### Hybrid Algorithm for detecting prime numbers.
  
 Project developed as end-of-course project in _Quantum Software Development Course_ from _Escuela Superior de Informatica - UCLM_.
 
