@@ -3,6 +3,7 @@ import qsharp
 from PND import Stage1
 
 CANDIDATE = 11
+GRAPHIC = False
 
 def array_to_number(array):
     '''Converts an array with bits intepreted as boolean values into integers'''
@@ -23,9 +24,11 @@ def stage_1():
         int_results.append(array_to_number(result))
         b_set.add(int_results[-1])
 
-    print(f'[STAGE 1] Odd numbers lower than {CANDIDATE}: {b_set}')
-    plt.hist(int_results)
-    plt.show()
+    print(f'[STAGE 1] Odd numbers lower than {CANDIDATE}: \n\t{b_set}')
+    if GRAPHIC:
+        plt.hist(int_results)
+        plt.show()
+
     return b_set
 
 def stage_2(b_set):
@@ -36,10 +39,11 @@ def stage_2(b_set):
         for b2 in b_set:
             c_set.add(b1 * b2)
 
+    print(f'[STAGE 2] Cartesian product of the B set: \n\t{c_set}')
     return c_set
 
 
 if __name__ == '__main__':
+    print(f'[STAGE 0] Potential prime number a: {CANDIDATE}')
     b_set = stage_1()
     c_set = stage_2(b_set)
-    print(c_set)
