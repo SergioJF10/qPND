@@ -28,10 +28,18 @@ def stage_1():
     plt.show()
     return b_set
 
-def stage_2():
+def stage_2(b_set):
     '''Second Stage (cartesian product): Classic cartesian product method'''
+    c_set = set()
 
+    for b1 in b_set:
+        for b2 in b_set:
+            c_set.add(b1 * b2)
+
+    return c_set
 
 
 if __name__ == '__main__':
     b_set = stage_1()
+    c_set = stage_2(b_set)
+    print(c_set)

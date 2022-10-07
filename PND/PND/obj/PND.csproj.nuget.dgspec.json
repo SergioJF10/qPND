@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sergi\\Documents\\PND\\PND\\PND.csproj": {}
+    "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\PND.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sergi\\Documents\\PND\\PND\\PND.csproj": {
+    "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\PND.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sergi\\Documents\\PND\\PND\\PND.csproj",
+        "projectUniqueName": "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\PND.csproj",
         "projectName": "PND",
-        "projectPath": "C:\\Users\\sergi\\Documents\\PND\\PND\\PND.csproj",
+        "projectPath": "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\PND.csproj",
         "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sergi\\Documents\\PND\\PND\\obj\\",
+        "outputPath": "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",

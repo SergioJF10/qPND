@@ -7171,11 +7171,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\sergi\\Documents\\PND\\PND\\PND.csproj",
+      "projectUniqueName": "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\PND.csproj",
       "projectName": "PND",
-      "projectPath": "c:\\Users\\sergi\\Documents\\PND\\PND\\PND.csproj",
+      "projectPath": "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\PND.csproj",
       "packagesPath": "C:\\Users\\sergi\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\sergi\\Documents\\PND\\PND\\obj\\",
+      "outputPath": "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sergi\\AppData\\Roaming\\NuGet\\NuGet.Config",

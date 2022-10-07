@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TcR7JQ3md2D2KGpWSpVxC2KBeq1Cge6nhxlrmt4cADqWzh2BNij9LRUEs+r/LiixdWEzmT0Fhw5brXID7fyGlw==",
+  "dgSpecHash": "2ND59JBoSNVtzou8xHqS/fhxRN3CF65Sf/53+vsF13OUpTlLDnhOAyIVY5sqkcJGH7slR3oaUj/aY6ONYbjv4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sergi\\Documents\\PND\\PND\\PND.csproj",
+  "projectFilePath": "c:\\Users\\sergi\\Documents\\GitHub\\qPND\\PND\\PND\\PND.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sergi\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\sergi\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",
