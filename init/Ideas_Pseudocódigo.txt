@@ -1,0 +1,31 @@
+Algoritmo EratosthenesQuantumSieve (N):
+	S <- [2, ..., N]			# S: Lista con los números potencialmente primos.
+	pivot <- 2				# pivot: Entero para comprobar sus múltiplos
+	
+	WHILE (pivot ^ pivot) <= N DO		# Comprobación mátemática para la condición de parada
+		M <- QuantumMultipleFinder(N)	# Algoritmo cuantico para encontrar los múltiplos de un número (ventaja teórica en complejidad)
+		S <- S - M 				# A los ya descartados, se le suman los nuevos múltiplos descubiertos por el Alg. Cuántico.
+			
+		pivot <- pivot + 1			# Iteración del pivote
+		WHILE !(pivot ∈ S) DO 		# Bucle de incremento para buscar el siguiente primo más cercano
+			pivot <- pivot + 1
+		END_WHILE
+	END_WHILE
+
+	return S				# S finalmente tendrá la lista con los números primos descubiertos
+END_ALG
+
+
+## Propuesta José Antonio ##
+Algoritmo EratosthenesQuantumSieve(N):
+	max_n <- 511
+	conj_primos <- {1, ..., 511}
+	
+	FOR i <- 2 to (i ^ 2) <= max_n DO
+		IF i ∈ conj_primos THEN
+			conj_primos <- conj_primos - Multiplos(i) # Multiplos(i): Devuelve lista de multiplos del número i
+		END IF
+	END FOR
+
+	return conj_primos
+END ALG
