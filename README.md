@@ -1,5 +1,5 @@
 # qPND
-### Hybrid Algorithm for detecting prime numbers.
+### _Hybrid Algorithm for detecting prime numbers_
  
 Project developed as end-of-course project in _Quantum Software Development Course_ from _Escuela Superior de Informatica - UCLM_.
 
@@ -19,7 +19,21 @@ The evolution of the project and the main idea of the hybrid algorithm changed a
 
 I also found a parallel alternative, again a "quantumization" of a classical algorithm for finding prime numbers, in this case, the _Sieve of Erastosthenes_. But, due to similar reasons as the previous approach, the idea was discarded.
 
-Finally, we reached this 
+Finally, we reached this idea aiming to simplify the algorithm, and the previously explained version of the algorithm was developed.
+
+## Implementation
+The quantum part of the algorithm was developed in Q# language. And, taking advantage of the Q# language ability to be wrapped within classic code in two conventional languages, Python was chosen.
+
+#### Dependences
+Regarding the Q# execution, you will need the .NET SDK and QDK. For installing it, in this [link](https://learn.microsoft.com/en-us/azure/quantum/install-command-line-qdk) you might find several options as well as the steps to install it. 
+
+Then, for the integration with Python, a virtual environment is available in the repository, but the libraries are:
+- [microsoft](https://pypi.org/project/microsoft/)
+- [qsharp](https://pypi.org/project/qsharp/)
+- [matplolib](https://pypi.org/project/matplotlib/)
+- [notebook](https://pypi.org/project/notebook/)
+
+For the case you might want to execuite it without the given virtual environment
 
 ## References
 The whole pdf for the references can be found in the `bib` folder.
