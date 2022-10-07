@@ -1,0 +1,4 @@
+microsoft
+qsharp
+notebook
+matplotlib
