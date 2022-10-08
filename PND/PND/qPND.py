@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import qsharp
 import sys
+import warnings
 from PND import Stage1
 
 CANDIDATE = 11
@@ -22,10 +23,10 @@ def stage_0():
     if CANDIDATE == 2:
         return True
     elif CANDIDATE % 2 == 0:
-        print(f'[PREPROCESS] {CANDIDATE} is NOT a prime number.')
+        print(f'[PREPROCESS] {CANDIDATE} is NOT a prime number')
         return False
     elif CANDIDATE > (2 ** QUBITS) - 1:
-        print(f'[PREPROCESS] Number {CANDIDATE} cannot be processed with 4 Qubits.')
+        print(f'[PREPROCESS] Number {CANDIDATE} cannot be processed with 4 Qubits')
         return False
     else:
         return True
@@ -39,7 +40,7 @@ def stage_1():
         int_results.append(array_to_number(result))
         b_set.add(int_results[-1])
 
-    print(f'[STAGE 1] Odd numbers lower than {CANDIDATE}: \n\t{b_set}')
+    print(f'[STAGE 1] Odd numbers encoded with {QUBITS} qubits {CANDIDATE}: \n\t{b_set}')
     if GRAPHIC:
         plt.hist(int_results)
         plt.show()
@@ -70,12 +71,13 @@ def main():
     b_set = stage_1()
     c_set = stage_2(b_set)
     if stage_3(c_set):
-        print(f'[STAGE 3] {CANDIDATE} is NOT a prime number.')
+        print(f'[STAGE 3] {CANDIDATE} is NOT a prime number')
     else:
-        print(f'[STAGE 3] {CANDIDATE} IS a prime number.')
+        print(f'[STAGE 3] {CANDIDATE} IS a prime number')
 
 
 if __name__ == '__main__':
+    warnings.filterwarnings('ignore')
     if len(sys.argv) != 2 and len(sys.argv) != 3:
         print('CmdLineError: Potential number not specified')
         sys.exit(1)

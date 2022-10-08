@@ -35,6 +35,16 @@ Then, for the integration with Python, a virtual environment is available in the
 
 For the case you might want to execuite it without the given virtual environment
 
+## Execution
+For executing the program, once you have installed all the requirements, open the repository and type the following commands
+```
+cd ./PND/PND/
+python -W ignore qPND.py [--plot/-p] <number>
+```
+The `-W ignore` is due to the qsharp library, which includes inside it some minor warnings.
+
+The `--plot` or `-p` option can be used in case you want to check the results after launching several times the Quantum Algorithm in a histogram. Also it's important for you to know that `<number>` **must** be an odd number, otherwise, the obvious result will be printed: _\<number\> is not a prime number_. Since it is divisible by $2$.
+
 ## References
 The whole pdf for the references can be found in the `bib` folder.
 #### Final Version
