@@ -12,7 +12,7 @@ Basically, we get a set of all those odd numbers lower than $a$ -the potential p
 
 For a more visual point of view, the process is explained in the figure below.
 
-![Final Version Diagram](https://github.com/SergioJF10/qPND/blob/main/doc/img/Final_Version.png?raw=true)
+![Flow_diagram](https://user-images.githubusercontent.com/72602176/195032699-9fe59128-f015-4fba-8fcb-ec79cbb97670.png)
 
 ## Evolution
 The evolution of the project and the main idea of the hybrid algorithm changed along time, starting from "quatumizing" classical primality tests -such as Miller-Rabin test of even the Fermat's Small Theorem- and use it as a Search Oracle in a Grover Search Algorithm. Due to the high complexity of this tasks and the time budget available, I had to discard the idea.
